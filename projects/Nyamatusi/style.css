@@ -1,0 +1,1071 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  position: absolute;
+  width: auto;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 2px solid white;
+}
+header img {
+  width: 5%;
+  padding-left: -30px;
+}
+header ul {
+  display: none;
+}
+header h3 {
+  font-size: 18px;
+  color: red;
+  font-family: "gotham italic";
+}
+
+.banner {
+  background-image: url(./img/Rectangl.png);
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+.banner h1 {
+  color: white;
+  font-size: 60px;
+  line-height: 75px;
+  font-family: "poppins semibold";
+}
+.banner .icons {
+  margin-top: 30px;
+}
+.banner .icons img {
+  margin-right: 20px;
+}
+
+.story {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.story h2 {
+  font-size: 55px;
+  font-family: "gotham regular";
+}
+.story p {
+  font-size: 17px;
+  font-family: "gotham regular";
+  line-height: 25px;
+}
+.story #p1 {
+  margin-top: 90px;
+}
+.story #p2 {
+  margin-top: 45px;
+}
+.story #img1 {
+  margin-top: 130px;
+  width: 100%;
+  height: 500px;
+}
+.story button {
+  width: 250px;
+  height: 55px;
+  color: white;
+  background-color: red;
+  border: none;
+  font-size: 18px;
+  font-family: "gotham regular";
+  margin-top: 30px;
+  text-align: center;
+}
+
+.activities {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.activities h2 {
+  font-size: 55px;
+  font-family: "gotham regular";
+  text-align: left;
+  margin-bottom: 30px;
+}
+.activities .images {
+  display: flex;
+  flex-direction: column;
+}
+.activities .images .activity {
+  position: relative;
+  margin-bottom: 15px;
+}
+.activities .images .activity h3 {
+  position: absolute;
+  top: 80%;
+  left: 44%;
+  z-index: 999;
+  color: white;
+  font-size: 30px;
+}
+.activities .images .activity .overlay {
+  display: none;
+}
+
+.sightings {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.sightings h2 {
+  font-size: 55px;
+  font-family: "gotham regular";
+  margin-bottom: 50px;
+}
+.sightings p {
+  font-size: 18px;
+  font-family: "gotham regular";
+  line-height: 25px;
+}
+.sightings .imgs {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+.sightings .imgs .img1 {
+  width: 100%;
+  margin-top: 0px;
+}
+.sightings .imgs .img2 {
+  width: 100%;
+  margin-top: 0px;
+}
+.sightings .imgs .img3 {
+  width: 100%;
+  margin-top: 0px;
+}
+.sightings .imgs .img4 {
+  width: 100%;
+  margin-top: 0px;
+}
+.sightings .imgs .img5 {
+  width: 100%;
+}
+.sightings .imgs img {
+  padding: 0 12px;
+  width: auto;
+}
+.sightings img {
+  width: 100% !important;
+  margin-top: 20px;
+}
+
+.iteneries {
+  padding: 0 20px;
+}
+.iteneries .row {
+  margin-bottom: 20px;
+}
+.iteneries h2 {
+  font-size: 55px;
+  font-family: "gotham regular";
+  margin-bottom: 50px;
+}
+.iteneries #text {
+  color: white;
+  background-color: rgb(255, 35, 0);
+  line-height: 20px;
+  width: 100%;
+  padding: 30px 20px;
+}
+.iteneries #text h4 {
+  font-size: 20px;
+  font-family: "poppins semibold";
+  margin-top: 30px;
+}
+.iteneries #text p {
+  font-size: 18px;
+  font-family: "gotham regular";
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+.iteneries #text #price {
+  font-family: "poppins semibold";
+  font-size: 20px;
+  border-top: 2px solid white;
+  text-align: left;
+}
+.iteneries #text #price img {
+  width: 10%;
+  margin-left: 119px;
+}
+.iteneries #text li {
+  list-style-type: disc;
+  margin-left: 15px;
+}
+.iteneries #text a {
+  font-size: 18px;
+  font-family: "gotham regular";
+  text-decoration: none;
+  color: white;
+}
+.iteneries #image2 {
+  position: relative;
+}
+.iteneries .overlay {
+  position: absolute;
+  color: white;
+  top: 0;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 370px;
+  line-height: 25px;
+}
+.iteneries .overlay h4 {
+  font-size: 20px;
+  font-family: "poppins semibold";
+  margin-bottom: 25px;
+}
+.iteneries .overlay p {
+  font-size: 18px;
+  font-family: "gotham regular";
+}
+
+.testimonials {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.testimonials h2 {
+  font-size: 55px;
+  font-family: "gotham regular";
+  margin-bottom: 50px;
+}
+.testimonials img {
+  position: relative;
+}
+.testimonials .overlay {
+  position: absolute;
+  width: 365px;
+  height: 595px;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.274);
+  margin-top: -595px;
+}
+.testimonials .overlay p {
+  margin-top: 500px;
+  font-family: "poppins semibold";
+}
+.testimonials .middle {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.testimonials .middle p {
+  font-size: 18px;
+  font-family: "gotham regular";
+  margin-top: 15px;
+}
+.testimonials .middle #name {
+  font-family: "poppins semibold";
+}
+
+.gallery {
+  margin-top: 150px;
+  padding: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.gallery h2 {
+  font-size: 55px;
+  font-family: "gotham regular";
+  margin-bottom: 50px;
+}
+.gallery .col-md-3 {
+  width: 100%;
+}
+.gallery #second {
+  margin-top: 15px;
+}
+.gallery #second .col-md-6 {
+  width: 100%;
+}
+.gallery #second .col-md-2 {
+  width: 100%;
+}
+.gallery .row {
+  margin-left: 20px;
+}
+
+.foot {
+  color: white;
+  background-color: rgb(255, 35, 0);
+  padding-bottom: 80px;
+  width: 100%;
+}
+.foot h3 {
+  font-size: 22px;
+  font-family: "poppins semibold";
+  margin-top: 80px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+.foot p {
+  font-size: 18px;
+  font-family: "gotham regular";
+  line-height: 40px;
+}
+.foot input {
+  width: 220px;
+  height: 45px;
+  font-size: 18px;
+  border: 0;
+  padding: 0 10px;
+}
+.foot button {
+  height: 46px;
+  color: white;
+  background-color: black;
+  width: 80px;
+  border: 1px solid black;
+  margin-left: -5px;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  background-color: rgb(255, 35, 0);
+  margin-top: 2px;
+  height: 100px;
+  width: 100%;
+}
+.footer p {
+  font-size: 18px;
+  font-family: "gotham regular";
+  padding-top: 50px;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  header {
+    width: 100%;
+  }
+  header img {
+    width: 5%;
+  }
+  header li {
+    display: none;
+  }
+  header h3 {
+    font-size: 30px;
+    color: red;
+    font-family: "gotham italic";
+  }
+  .banner {
+    background-image: url(./img/Rectangl.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+  }
+  .banner h1 {
+    color: white;
+    font-size: 60px;
+    line-height: 75px;
+    font-family: "poppins semibold";
+  }
+  .banner .icons {
+    margin-top: 30px;
+  }
+  .banner .icons img {
+    margin-right: 20px;
+  }
+  .activities {
+    text-align: center;
+  }
+  .activities .images {
+    display: flex;
+  }
+  .activities .images .activity {
+    position: relative;
+    margin-bottom: 15px;
+    margin-right: 10px;
+  }
+  .activities .images .activity h3 {
+    position: absolute;
+    top: 60%;
+    left: 18%;
+    z-index: 999;
+    color: white;
+    font-size: 30px;
+  }
+  .activities .images .activity .overlay {
+    display: none;
+  }
+  .sightings {
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+  .sightings h2 {
+    font-size: 55px;
+    font-family: "gotham regular";
+    margin-bottom: 50px;
+  }
+  .sightings p {
+    font-size: 18px;
+    font-family: "gotham regular";
+    line-height: 25px;
+  }
+  .sightings .imgs {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+  .sightings .imgs .img1 {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .sightings .imgs .img2 {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .sightings .imgs .img3 {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .sightings .imgs .img4 {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .sightings .imgs .img5 {
+    width: 100%;
+  }
+  .sightings .imgs img {
+    padding: 0 12px;
+    width: auto;
+  }
+  .sightings img {
+    width: 100% !important;
+    margin-top: 20px;
+  }
+  .iteneries {
+    padding: 0 20px;
+  }
+  .iteneries .row {
+    margin-bottom: 20px;
+  }
+  .iteneries h2 {
+    font-size: 55px;
+    font-family: "gotham regular";
+    margin-bottom: 50px;
+  }
+  .iteneries #text {
+    color: white;
+    background-color: rgb(255, 35, 0);
+    line-height: 20px;
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .iteneries #text h4 {
+    font-size: 20px;
+    font-family: "poppins semibold";
+    margin-top: 30px;
+  }
+  .iteneries #text p {
+    font-size: 18px;
+    font-family: "gotham regular";
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 30px;
+  }
+  .iteneries #text #price {
+    font-family: "poppins semibold";
+    font-size: 20px;
+    border-top: 2px solid white;
+    text-align: left;
+  }
+  .iteneries #text #price img {
+    width: 100%;
+  }
+  .iteneries #text li {
+    list-style-type: disc;
+    margin-left: 15px;
+  }
+  .iteneries #text a {
+    font-size: 18px;
+    font-family: "gotham regular";
+    text-decoration: none;
+    color: white;
+  }
+  .iteneries #image2 {
+    position: relative;
+    width: 100%;
+  }
+  .iteneries .overlay {
+    position: absolute;
+    color: white;
+    top: 0;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 370px;
+    line-height: 25px;
+  }
+  .iteneries .overlay h4 {
+    font-size: 20px;
+    font-family: "poppins semibold";
+    margin-bottom: 25px;
+  }
+  .iteneries .overlay p {
+    font-size: 18px;
+    font-family: "gotham regular";
+  }
+  .testimonials {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  .testimonials h2 {
+    font-size: 55px;
+    font-family: "gotham regular";
+    margin-bottom: 50px;
+  }
+  .testimonials img {
+    position: relative;
+  }
+  .testimonials .overlay {
+    position: absolute;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.274);
+    margin-top: -255px;
+    opacity: 1;
+    height: 50%;
+    width: 20%;
+  }
+  .testimonials .overlay p {
+    margin-top: 500px;
+    font-family: "poppins semibold";
+  }
+  .testimonials .middle {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .testimonials .middle p {
+    font-size: 18px;
+    font-family: "gotham regular";
+    margin-top: 15px;
+  }
+  .testimonials .middle #name {
+    font-family: "poppins semibold";
+  }
+  .gallery {
+    margin-top: 150px;
+    padding: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery h2 {
+    font-size: 55px;
+    font-family: "gotham regular";
+    margin-bottom: 50px;
+  }
+  .gallery .col-md-3 {
+    width: 100%;
+  }
+  .gallery #second {
+    margin-top: 15px;
+  }
+  .gallery #second .col-md-6 {
+    width: 100%;
+  }
+  .gallery #second .col-md-2 {
+    width: 100%;
+  }
+  .gallery .row {
+    margin-left: 20px;
+  }
+  .foot {
+    color: white;
+    background-color: rgb(255, 35, 0);
+    padding-bottom: 80px;
+    width: 100%;
+  }
+  .foot h3 {
+    font-size: 22px;
+    font-family: "poppins semibold";
+    margin-top: 80px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+  .foot p {
+    font-size: 18px;
+    font-family: "gotham regular";
+    line-height: 40px;
+  }
+  .foot input {
+    width: 180px;
+    height: 45px;
+    font-size: 18px;
+    border: 0;
+    padding: 0 10px;
+  }
+  .foot button {
+    height: 46px;
+    color: white;
+    background-color: black;
+    width: 80px;
+    border: 1px solid black;
+    margin-left: 0px;
+  }
+  .footer {
+    text-align: center;
+    color: white;
+    background-color: rgb(255, 35, 0);
+    margin-top: 2px;
+    height: 100px;
+  }
+  .footer p {
+    font-size: 18px;
+    font-family: "gotham regular";
+    padding-top: 50px;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    width: 100%;
+  }
+  header img {
+    width: 3%;
+  }
+  header ul {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 20px;
+  }
+  header ul a {
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: "gotham regular";
+  }
+  header h3 {
+    font-size: 30px;
+    color: red;
+    font-family: "gotham italic";
+  }
+  .banner {
+    background-image: url(./img/banner.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+  }
+  .banner h1 {
+    color: white;
+    font-size: 120px;
+    line-height: 75px;
+    font-family: "poppins semibold";
+    margin-bottom: 100px;
+  }
+  .banner .icons {
+    margin-top: 30px;
+  }
+  .banner .icons img {
+    margin-right: 20px;
+  }
+  .banner span {
+    display: none;
+  }
+  .banner .icons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 50px;
+  }
+  .banner .icons img {
+    width: 30px;
+    margin-bottom: 20px;
+  }
+  .activities {
+    text-align: center;
+  }
+  .activities .images {
+    flex-direction: row;
+  }
+  .activities .images .activity {
+    position: relative;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  .activities .images .activity h3 {
+    position: absolute;
+    top: 70%;
+    left: 34%;
+    z-index: 999;
+    color: white;
+    font-size: 30px;
+  }
+  .activities .images .activity .overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.587);
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    padding: 0px 20px;
+    padding-top: 40px;
+    opacity: 0;
+  }
+  .activities .images .activity:hover {
+    cursor: pointer;
+  }
+  .activities .images .activity:hover h3 {
+    opacity: 0;
+  }
+  .activities .images .activity:hover .overlay {
+    opacity: 1;
+    transition: 1s;
+  }
+  .sightings {
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+  .sightings h2 {
+    font-size: 55px;
+    font-family: "gotham regular";
+    margin-bottom: 50px;
+  }
+  .sightings p {
+    font-size: 18px;
+    font-family: "gotham regular";
+    line-height: 25px;
+  }
+  .sightings .imgs {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px;
+  }
+  .sightings .imgs .img1 {
+    width: 100%;
+    margin-top: 90px;
+  }
+  .sightings .imgs .img2 {
+    width: 100%;
+    margin-top: 130px;
+  }
+  .sightings .imgs .img3 {
+    width: 100%;
+    margin-top: 65px;
+  }
+  .sightings .imgs .img4 {
+    width: 100%;
+    margin-top: -200px;
+  }
+  .sightings .imgs .img5 {
+    width: 100%;
+  }
+  .sightings .imgs img {
+    padding: 0 12px;
+    width: auto;
+  }
+  .sightings img {
+    width: auto !important;
+    margin-top: 20px;
+  }
+  .iteneries {
+    display: flex;
+  }
+  .iteneries {
+    padding: 0 30px;
+  }
+  .iteneries .row {
+    margin-bottom: 20px;
+  }
+  .iteneries h2 {
+    font-size: 55px;
+    font-family: "gotham regular";
+    margin-bottom: 50px;
+  }
+  .iteneries #text {
+    color: white;
+    background-color: rgb(255, 35, 0);
+    line-height: 20px;
+    width: 100%;
+    height: 75.5vh;
+    padding: 30px 20px;
+  }
+  .iteneries #text h4 {
+    font-size: 20px;
+    font-family: "poppins semibold";
+    margin-top: 0px;
+  }
+  .iteneries #text p {
+    font-size: 18px;
+    font-family: "gotham regular";
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 30px;
+  }
+  .iteneries #text #price {
+    font-family: "poppins semibold";
+    font-size: 20px;
+    border-top: 2px solid white;
+    text-align: left;
+  }
+  .iteneries #text #price img {
+    width: 10%;
+    margin-left: 100px;
+  }
+  .iteneries #text a {
+    font-size: 18px;
+    font-family: "gotham regular";
+    text-decoration: none;
+    color: white;
+  }
+  .iteneries #image2 {
+    position: relative;
+    height: 75.5vh;
+  }
+  .iteneries #image2 img {
+    height: 100%;
+  }
+  .iteneries .overlay {
+    position: absolute;
+    color: white;
+    top: 0;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+    line-height: 25px;
+    background-color: rgba(0, 0, 0, 0.64);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  .iteneries .overlay h4 {
+    font-size: 20px;
+    font-family: "poppins semibold";
+    margin-top: 480px;
+    margin-bottom: 25px;
+  }
+  .iteneries .overlay p {
+    font-size: 18px;
+    font-family: "gotham regular";
+  }
+  .testimonials {
+    width: auto;
+    margin-top: 150px;
+  }
+  .testimonials h2 {
+    font-size: 55px;
+    font-family: "gotham regular";
+    margin-bottom: 50px;
+  }
+  .testimonials .row {
+    text-align: center;
+    position: relative;
+  }
+  .testimonials .middle {
+    border: 1px solid red;
+    width: 100%;
+    height: 95%;
+    text-align: center;
+    padding-top: 45px;
+    padding-top: 0;
+  }
+  .testimonials p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: "gotham regular";
+    line-height: 30px;
+  }
+  .testimonials #name {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-family: "gotham regular";
+  }
+  .testimonials hr {
+    margin-left: 250px;
+  }
+  .testimonials img {
+    position: relative;
+    padding-top: 25px;
+  }
+  .testimonials .overlay {
+    position: absolute;
+    width: 306px;
+    height: 495px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.274);
+    margin-top: -498px;
+  }
+  .testimonials .overlay p {
+    margin-top: 450px;
+    font-family: "poppins semibold";
+  }
+  .gallery {
+    margin-top: 150px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  .gallery h2 {
+    font-size: 55px;
+    font-family: "gotham regular";
+    margin-bottom: 50px;
+  }
+  .gallery .col-md-3 {
+    width: 22.8%;
+  }
+  .gallery #second {
+    margin-top: 15px;
+  }
+  .gallery #second .col-md-6 {
+    width: 44.5%;
+  }
+  .gallery #second .col-md-2 {
+    width: 17%;
+  }
+  .gallery .row {
+    margin-left: 20px;
+  }
+  .foot {
+    color: white;
+    background-color: rgb(255, 35, 0);
+    padding-bottom: 80px;
+  }
+  .foot h3 {
+    font-size: 22px;
+    font-family: "poppins semibold";
+    margin-top: 80px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+  .foot p {
+    font-size: 18px;
+    font-family: "gotham regular";
+    line-height: 40px;
+  }
+  .foot input {
+    width: 220px;
+    height: 45px;
+    font-size: 18px;
+    border: 0;
+    padding: 0 10px;
+  }
+  .foot button {
+    height: 46px;
+    color: white;
+    background-color: black;
+    width: 80px;
+    border: 1px solid black;
+    margin-left: -5px;
+  }
+  .footer {
+    text-align: center;
+    color: white;
+    background-color: rgb(255, 35, 0);
+    margin-top: 2px;
+    height: 100px;
+  }
+  .footer p {
+    font-size: 18px;
+    font-family: "gotham regular";
+    padding-top: 50px;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
